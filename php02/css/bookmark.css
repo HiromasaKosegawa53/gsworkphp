@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+fieldset {
+    border: 2px #000000 double;
+    display: block;
+}
+
+.bookmark_form {
+    display: inline-block;
+}
+.bookmark_form label {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.submit_btn {
+    display: block;
+}
