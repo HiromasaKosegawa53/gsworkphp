@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+body {
+    font-family: Lato, "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+/*メインビジュアル*/
+.main_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #a7a7a7;
+}
+.main_img_morning {
+    background-image: url(../image/morning.jpg);
+}
+.main_img_noon {
+    background-image: url(../image/noon.jpg);
+}
+.main_img_night {
+    background-image: url(../image/night.jpg);
+}
+.main_img_tasogare {
+    background-image: url(../image/tasogare.jpg);
+}
+p {
+    color: beige;
+}
