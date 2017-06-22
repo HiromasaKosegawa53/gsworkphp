@@ -15,7 +15,7 @@
             <input type="hidden" name="lifeFlag">
             <input type="submit" value="登録">
         </form>
-        <div><a href="secretQ.php">秘密の質問を設定し登録する</a></div>
+        <div><a href="bm_secretQ.php">秘密の質問を設定し登録する</a></div>
         <form action="bm_login_view.php">
             既にアカウントをお持ちの方：
             <input type="submit" value="ログインする">
