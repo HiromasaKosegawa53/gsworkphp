@@ -1,0 +1,294 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+body {
+    font-family: Lato, "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.logo{
+    margin: 20px 0;
+    padding-left: 20px;
+    text-align: center;
+}
+.logo_size {
+    width: 15%;
+    height: auto;
+}
+.content {
+    text-align: center;
+}
+
+
+/*header*/
+.main-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: #C79849;
+}
+.main-title {
+    font-size: 48px;
+    color: #FCFBF9;
+}
+/*//header*/
+
+/*form*/
+/*説明*/
+.gutiru {
+    font-size: 10px;
+}
+.contact {
+    font-size: 24px;
+    color: #ffd61a;
+}
+.contact-wrapper {
+    margin-bottom: 140px;
+}
+.contact-container {
+    text-align: center;
+}
+.contact-title h2 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+.contact-subTitle p {
+    margin-bottom: 60px;
+    font-size: 18px;
+}
+.contact-sentence {
+    font-size: 16px;
+}
+.contact-sentence1 {
+    padding-bottom: 5px;
+}
+.contact-sentence2 {
+    margin-bottom: 30px;
+}
+.contact-sentence3 {
+    padding-bottom: 5px;
+}
+.contact-sentence4 {
+    margin-bottom: 70px;
+}
+/*記入フォーム*/
+table {
+    width: 640px;
+    margin: auto;
+    border-top: 2px #bfbfbf solid;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+.form-table tr {
+    border-top: 1px #bfbfbf solid;
+    border-bottom: 1px #bfbfbf solid;
+}
+.form-table td {
+    font-size: 13px;
+}
+.form-table td:not(:last-child) {
+    border-right: 1px #bfbfbf solid;
+}
+.form-tableTd-title {
+    width: 240px;
+    padding-left: 16px;
+    padding-right: 64px;
+    vertical-align: middle;
+}
+.form-tableTd-title-n2 {
+    width: 240px;
+    padding-left: 16px;
+    padding-right: 64px;
+    padding-top: 8px;
+    vertical-align: top;
+}
+.form-tableTd-input {
+    width: 400px;
+}
+
+/*名前、カナ、メールのinput*/
+.form-input-someType {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 64px;
+}
+.aInput {
+    width: 328px;
+    height: 36px;
+    font-size: 16px;
+}
+
+/*名前、カナ、メールのinputにほぼ合わせる、セレクトボックス*/
+.form-tableTd-input select {
+    width: 328px;
+    height: 36px;
+    /*font-size: 16px;*/
+}
+
+/*チェックボックス*/
+.chBox {
+    display: inline-block;
+    margin-right: 24px;
+    margin-left: 8px;
+}
+.chBox-paragraph {
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+.check_css {
+    font-size: 13px;
+}
+.chBox-paragraph:last-child {
+    margin-bottom: 8px;
+}
+/*外部ソース*/
+/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+input[type=checkbox] {
+    display: none;
+}
+.check_css {
+    -webkit-transition: background-color 0.2s linear;
+    transition: background-color 0.2s linear;
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 42px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.check_css:hover:after {
+    border-color: #ffd61a;
+}
+.check_css:after {
+    -webkit-transition: border-color 0.2s linear;
+    transition: border-color 0.2s linear;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    display: block;
+    margin-top: -10px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    content: '';
+}
+.check_css:before {
+    -webkit-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+    position: absolute;
+    top: 50%;
+    left: 21px;
+    display: block;
+    margin-top: -7px;
+    width: 5px;
+    height: 9px;
+    border-right: 3px solid #ffd61a;
+    border-bottom: 3px solid #ffd61a;
+    content: '';
+    opacity: 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+input[type=checkbox]:checked + .check_css:before {
+    opacity: 1;
+}
+/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+
+/*名前、カナ、メールのinputにほぼ合わせる、テキストエリア*/
+.form-tableTd-input textarea {
+    width: 328px;
+    font-size: 16px;
+}
+
+/*送信ボタン*/
+/*Moreとほぼ同じ*/
+.sub-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.sub {
+    font-size: 18px;
+    background-color: #ffd61a;
+    color: #ffffff;
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    /*Moreから追記*/
+    border-style: none;
+}
+.sub-wrapper:active {
+    opacity: 0.5 ;
+    width: 270px;
+}
+/*外部ソース*/
+/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+.sub-act {
+    /*位置の指定関係*/
+    position: relative;
+    width: 300px;
+    margin: auto;
+    /*display: inline-block;*/
+    /*padding: .9em 3.6em;*/
+    /*border: 2px solid #fff;*/
+    /*color: #fff;*/
+    /*text-align: center;*/
+    /*text-decoration: none;*/
+    /*outline: none;*/
+    /*transition: all .2s;*/
+}
+.sub-act::before,
+.sub-act::after {
+    /*位置の指定関係*/
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    /*    z-index: 2;*/
+    /*    content: '';*/
+    width: 0;
+    height: 0;
+    /*枠の指定関係、borderを透明にする*/
+    border: 2px solid transparent;
+}
+.sub:hover {
+    /*ホバー中の文字の色*/
+    color: #3be5ae;
+    border-color: #3be5ae;
+}
+.sub-act:hover::before,
+.sub-act:hover::after {
+    /*ホバーの範囲の上限の指定関係*/
+    width: 100%;
+    height: 100%;
+}
+.sub-act:hover::before {
+    /*ホバーした時の枠の指定関係*/
+    border-top-color: #3be5ae;
+    border-right-color: #3be5ae;
+    transition: width .3s, height .3s .3s;
+}
+.sub-act:hover::after {
+    /*ホバー離れた時の枠の指定関係*/
+    border-bottom-color: #3be5ae;
+    border-left-color: #3be5ae;
+    transition: height .3s, width .3s .3s;
+}
+/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+/*//form*/
+
+/*footer*/
+footer {
+    background-color: #9F9F9F;
+}
+.footer-sentence {
+    font-size: 13px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+/*//footer*/
